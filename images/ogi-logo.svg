@@ -1,0 +1,45 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="OGI">
+  <defs>
+    <linearGradient id="sun" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F6C945"/>
+      <stop offset="55%" stop-color="#E08A1E"/>
+      <stop offset="100%" stop-color="#C45A12"/>
+    </linearGradient>
+    <linearGradient id="intel" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1ED6C3"/>
+      <stop offset="100%" stop-color="#4F8CFF"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="42%" r="55%">
+      <stop offset="0%" stop-color="#F6C945" stop-opacity=".35"/>
+      <stop offset="60%" stop-color="#1ED6C3" stop-opacity=".08"/>
+      <stop offset="100%" stop-color="#061018" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="#071018"/>
+  <circle cx="256" cy="220" r="180" fill="url(#glow)"/>
+  <!-- outer ring -->
+  <circle cx="256" cy="256" r="188" fill="none" stroke="#163041" stroke-width="10"/>
+  <circle cx="256" cy="256" r="188" fill="none" stroke="url(#intel)" stroke-width="3" stroke-dasharray="18 14" opacity=".85"/>
+  <!-- solar panel house mark -->
+  <g transform="translate(156 150)">
+    <path d="M100 18 L182 78 V178 H18 V78 Z" fill="#0C1B27" stroke="url(#sun)" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M100 18 L182 78 H18 Z" fill="url(#sun)" opacity=".95"/>
+    <path d="M48 104 H152 V162 H48 Z" fill="#102433" stroke="#1ED6C3" stroke-width="6"/>
+    <path d="M48 123 H152 M48 142 H152 M83 104 V162 M117 104 V162" stroke="#1ED6C3" stroke-width="4" opacity=".85"/>
+  </g>
+  <!-- neural nodes -->
+  <g fill="#4F8CFF">
+    <circle cx="118" cy="350" r="8"/>
+    <circle cx="176" cy="386" r="7"/>
+    <circle cx="256" cy="402" r="9"/>
+    <circle cx="336" cy="386" r="7"/>
+    <circle cx="394" cy="350" r="8"/>
+  </g>
+  <g stroke="url(#intel)" stroke-width="3" fill="none" opacity=".9">
+    <path d="M118 350 L176 386 L256 402 L336 386 L394 350"/>
+    <path d="M176 386 L256 330 L336 386"/>
+    <path d="M256 330 L256 250"/>
+  </g>
+  <circle cx="256" cy="250" r="10" fill="#F6C945"/>
+  <text x="256" y="468" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700" letter-spacing="10" fill="#E8F2F7">OGI</text>
+</svg>
