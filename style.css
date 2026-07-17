@@ -125,7 +125,7 @@ nav {
   font-size: 0.78rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--sun);
+  color: #e8f2f7;
   margin-bottom: 1rem;
 }
 .hero h1 {
@@ -204,7 +204,7 @@ nav {
   display: block;
   font-family: var(--mono);
   font-size: 0.75rem;
-  color: var(--sun);
+  color: #e8f2f7;
   letter-spacing: 0.12em;
   margin-bottom: 0.35rem;
 }
@@ -380,11 +380,11 @@ section.alt > * {
   font-size: 0.72rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--sun);
-  border: 1px solid rgba(240, 180, 41, 0.28);
+  color: #e8f2f7;
+  border: 1px solid rgba(232, 242, 247, 0.22);
   border-radius: 999px;
   padding: 0.25rem 0.55rem;
-  background: rgba(240, 180, 41, 0.08);
+  background: rgba(255, 255, 255, 0.04);
 }
 .price {
   font-size: 1.35rem;
@@ -466,7 +466,7 @@ section.alt > * {
   font-size: 0.74rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--sun);
+  color: #e8f2f7;
 }
 .pill p { color: var(--muted); font-size: 0.94rem; }
 
