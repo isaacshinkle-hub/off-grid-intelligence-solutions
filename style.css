@@ -86,6 +86,7 @@ nav {
   font-size: 0.95rem;
   letter-spacing: 0.02em;
   font-weight: 800;
+  color: var(--sun);
 }
 .brand em {
   font-style: normal;
@@ -133,6 +134,7 @@ nav {
   letter-spacing: -0.03em;
   font-weight: 800;
   margin-bottom: 1.1rem;
+  color: var(--sun);
 }
 .hero h1 .accent {
   background: linear-gradient(135deg, var(--teal), var(--blue));
