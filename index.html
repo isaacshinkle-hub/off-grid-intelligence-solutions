@@ -5,13 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Off-Grid Intelligence Solutions (OGI) — Solar Systems & AI Agents for Independent Places</title>
 <meta name="description" content="Off-Grid Intelligence Solutions (OGI): Southern Utah off-grid solar packages for cabins, sheds, and remote property — plus practical AI agent setup for homes and small businesses.">
-<meta name="theme-color" content="#071018">
-<link rel="icon" href="images/ogi-logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0b0b0b">
+<link rel="icon" href="images/ogi-logo-mark.png" type="image/png">
+<link rel="apple-touch-icon" href="images/ogi-logo-mark.png">
 <link rel="canonical" href="https://offgridintelligencesolutions.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=1">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 <div class="sky" aria-hidden="true"></div>
@@ -19,7 +20,7 @@
 
 <nav>
   <a class="brand" href="#top">
-    <img src="images/ogi-logo.svg" alt="OGI mark">
+    <img class="brand-mark" src="images/ogi-logo-mark-white.png" alt="OGI mark">
     <span>
       <strong>Off-Grid Intelligence</strong>
       <em>Solutions</em>
@@ -44,6 +45,7 @@
     <p class="lede">
       <strong>Off-Grid Intelligence Solutions (OGI)</strong> designs and installs practical off-grid solar for cabins, sheds, and remote land — and sets up AI agents that help you run the operation without living on a power bill or a dozen apps.
     </p>
+    <p class="tagline">Powering Autonomous Systems</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="#packages">See Packages</a>
       <a class="btn btn-ghost" href="mailto:offgridintelligencesolutions@gmail.com?subject=OGI%20Project%20Inquiry">Email OGI</a>
@@ -55,11 +57,8 @@
     </div>
   </div>
   <div class="hero-panel">
-    <div class="orbit-card">
-      <img class="hero-logo" src="images/ogi-logo.svg" alt="OGI logo">
-      <div class="orbit-lines" aria-hidden="true">
-        <span></span><span></span><span></span>
-      </div>
+    <div class="logo-card">
+      <img class="hero-lockup" src="images/ogi-logo-lockup.png" alt="Off-Grid Intelligence Solutions logo">
       <ul class="signal-list">
         <li><strong>Power</strong> where the grid doesn’t go</li>
         <li><strong>Storage</strong> that keeps nights quiet</li>
@@ -83,17 +82,17 @@
   </div>
   <div class="feature-grid">
     <article class="feature">
-      <div class="icon-badge">☀</div>
+      <div class="icon-badge">01</div>
       <h3>Cabin & shed systems</h3>
       <p>Weekend places, hunting cabins, tiny homes, and outbuildings that need clean power without waiting on a power-company trench.</p>
     </article>
     <article class="feature">
-      <div class="icon-badge">▣</div>
+      <div class="icon-badge">02</div>
       <h3>Battery-first design</h3>
       <p>Modern LiFePO4 storage, pure sine power, and 48V architecture so the system feels solid at night — not fragile.</p>
     </article>
     <article class="feature">
-      <div class="icon-badge">↗</div>
+      <div class="icon-badge">03</div>
       <h3>Expandable by design</h3>
       <p>Begin with what you need now. Add panels and batteries later as the property, tools, and lifestyle grow.</p>
     </article>
@@ -232,16 +231,16 @@
       <a class="btn btn-primary" href="mailto:offgridintelligencesolutions@gmail.com?subject=OGI%20Project%20Inquiry&body=Name%3A%0ALocation%20/%20property%20type%3A%0ANeed%20(power%2C%20AI%20agents%2C%20or%20both)%3A%0ARough%20timeline%3A%0ANotes%3A%0A">Start a Project</a>
       <a class="btn btn-ghost" href="mailto:offgridintelligencesolutions@gmail.com?subject=OGI%20Quick%20Question">Quick question</a>
     </div>
-    <p class="fine">Business email: <a href="mailto:offgridintelligencesolutions@gmail.com">offgridintelligencesolutions@gmail.com</a> · Domain live at offgridintelligencesolutions.com</p>
+    <p class="fine">Business email: <a href="mailto:offgridintelligencesolutions@gmail.com">offgridintelligencesolutions@gmail.com</a> · <a href="https://offgridintelligencesolutions.com">offgridintelligencesolutions.com</a></p>
   </div>
 </section>
 
 <footer>
   <div class="foot-brand">
-    <img src="images/ogi-logo.svg" alt="">
+    <img src="images/ogi-logo-mark-white.png" alt="">
     <div>
       <strong>Off-Grid Intelligence Solutions</strong>
-      <span>OGI · Southern Utah</span>
+      <span>Powering Autonomous Systems · Southern Utah</span>
     </div>
   </div>
   <p>© <span id="y"></span> Off-Grid Intelligence Solutions. Independent power systems and practical AI agents.</p>
@@ -252,7 +251,7 @@
   const io = new IntersectionObserver((entries) => {
     entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('in'); });
   }, { threshold: 0.12 });
-  document.querySelectorAll('.feature, .pkg, .split-card, .steps li, .pill, .contact-card').forEach((el) => {
+  document.querySelectorAll('.feature, .pkg, .split-card, .steps li, .pill, .contact-card, .logo-card').forEach((el) => {
     el.classList.add('reveal');
     io.observe(el);
   });
