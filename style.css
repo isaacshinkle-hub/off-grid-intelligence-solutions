@@ -502,7 +502,17 @@ section.alt > * {
   letter-spacing: -0.01em;
   text-align: right;
 }
-.tier > p {
+.tier-price {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0.15rem 0 0.45rem;
+  letter-spacing: -0.01em;
+}
+.tier.featured-tier .tier-price {
+  color: var(--sun);
+}
+.tier > p:not(.tier-price) {
   color: var(--muted);
   font-size: 0.9rem;
   margin-bottom: 0.55rem;
